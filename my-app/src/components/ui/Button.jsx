@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Button({ children, className = '', variant = 'default', size = 'md', ...props }) {
-  const base = 'inline-flex items-center justify-center gap-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const base = 'inline-flex items-center justify-center gap-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-sm transition-colors duration-150'
 
   const variants = {
     default: 'bg-indigo-600 text-white hover:bg-indigo-500 focus:ring-indigo-600',

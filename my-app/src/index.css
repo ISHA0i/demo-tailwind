@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --ui-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--ui-font);
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
+  color: rgba(255, 255, 255, 0.92);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,10 +29,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: radial-gradient(800px 300px at 10% 8%, rgba(99,102,241,0.06), transparent 20%),
+              linear-gradient(180deg, rgba(17,24,39,0.7) 0%, rgba(74,20,140,0.12) 60%);
 }
 
 h1 {

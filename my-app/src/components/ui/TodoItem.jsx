@@ -3,7 +3,7 @@ import Checkbox from './Checkbox'
 
 export default function TodoItem({ todo, onToggle, onEdit, onDelete }) {
   return (
-    <div className="flex items-center justify-between gap-4 bg-transparent p-3 rounded-md hover:bg-white/2 transition">
+    <div className="flex items-center justify-between gap-4 bg-transparent p-3 rounded-lg hover:bg-white/5 transition-colors">
       <div className="flex items-center gap-3">
         <Checkbox checked={todo.completed} onChange={onToggle} />
         <div>
@@ -12,7 +12,7 @@ export default function TodoItem({ todo, onToggle, onEdit, onDelete }) {
         </div>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         <button onClick={onEdit} className="text-sm text-indigo-300 hover:underline">Edit</button>
         <button onClick={onDelete} className="text-sm text-red-400 hover:underline">Delete</button>
       </div>
